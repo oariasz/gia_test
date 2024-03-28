@@ -1,5 +1,7 @@
 # Git Procedures
 
+* See video: https://www.youtube.com/watch?v=tRZGeaHPoaw
+
 1. INITIALIZE A LOCAL REPOSITORY
 
 git init
@@ -43,3 +45,11 @@ git merge [branch]
 9. CHECK THE AVAILABLE BRANCHES
 
 git branch -l
+
+10. RESTORE A FILE FROM A PREVIOUS COMMIT
+
+// This method completely replaces the current version of the file in your working directory with the version from the desired commit
+git checkout <commit_hash> -- <file_path>    
+
+// Commit hash can be found using:
+git log
