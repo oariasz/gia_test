@@ -10,7 +10,7 @@ git config --global init.defaultBranch main    // this is to confirm we are usin
 Create a repository in GitHub        // https://github.com/oariasz/gia_test
 git remote add origin <url>          // use the name of the created repository on GitHub
 git branch -M main
-git pull --rebase origin main        // just in case a README file was created on the web
+git pull --rebase origin main        // WARNING: just in case a README file was created on the web
 git push -u origin main              // initial push
 
 3. SYNC MY REPOSITORY COMMITTING ALL THE UPDATES
@@ -39,3 +39,7 @@ git branch -m master main
 8. MERGE THE SPECIFIED BRANCH'S HISTORY INTO THE CURRENT ONE
 
 git merge [branch]
+
+9. CHECK THE AVAILABLE BRANCHES
+
+git branch -l
