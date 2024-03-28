@@ -7,8 +7,10 @@ git config --global init.defaultBranch main    // this is to confirm we are usin
 
 2. PUBLISH REPOSITORY TO GITHUB
 
-Create a repository in GitHub
-git remote add <remote_name> <url>   // use the name of the created repository on GitHub
+Create a repository in GitHub        // https://github.com/oariasz/gia_test
+git remote add origin <url>          // use the name of the created repository on GitHub
+git branch -M main
+git pull --rebase origin main        // just in case a README file was created on the web
 git push -u origin main              // initial push
 
 3. SYNC MY REPOSITORY COMMITTING ALL THE UPDATES
